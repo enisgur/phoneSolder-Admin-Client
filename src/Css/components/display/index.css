@@ -1,0 +1,45 @@
+.panel-main .main {
+  background-color: var(--bg-main);
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+  overflow: auto;
+}
+
+.panel-main .main .top-nav {
+  background-color: var(--bg-navbar);
+  position: relative;
+  width: var(--box-navbar-width);
+  height: var(--box-navbar-height);
+  padding: var(--navbar-top-padding);
+  margin: var(--navbar-top-margin);
+  border-radius: var(--navbar-top-border-radius);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-main .main .top-nav .nav-left,
+.panel-main .main .top-nav .nav-right {
+  /* background-color: yellow; */
+  width: auto;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.panel-main .main .top-nav .nav-left .user-icon {
+  margin: 0 10px 0 0;
+}
+
+/* DISPLAY */
+
+.panel-main .main .display {
+  /* background-color: tomato; */
+  position: relative;
+  width: var(--box-display-width);
+  height: auto;
+  margin: 0 auto;
+}

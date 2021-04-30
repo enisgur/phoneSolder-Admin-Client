@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+}
+html {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--default-font-size);
+  color: var(--color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color);
+}
+ul {
+  list-style: none;
+}
+
+.panel-main .card-icon {
+  width: 60px;
+  height: 60px;
+}
+.panel-main .notification-icon {
+  width: 25px;
+  height: 25px;
+}
+.panel-main .user-icon {
+  width: 25px;
+  height: 25px;
+}
+.panel-main .logo-img {
+  width: 40px;
+  height: 40px;
+}
+.panel-main .page-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.panel-main {
+  /* position: relative; */
+  display: grid;
+  grid-template-columns: var(--box-sidebar-width) 1fr;
+}

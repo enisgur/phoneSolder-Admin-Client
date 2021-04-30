@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+// custom paths
+import { pathDashboard } from "./Data/links";
+
+// Redux
+import { Provider } from "react-redux";
+import store from "./store";
+import { loadUser } from "./actions/auth";
+
+import PrivateRoute from "./Components/PrivateRoute";
+import DashboardLayout from "./Components/Layouts/Dashboard";
+import LoginLayout from "./Components/Layouts/Login";
+// import Sidebar from "./Components/Sidebar";
+// import Display from "./Components/Display";
 
 function App() {
+  useEffect(() => {
+    store.dispatch(loadUser());
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Router>
+        <Switch>
+          <PrivateRoute
+            exact
+            path={`${pathDashboard}*`}
+            component={DashboardLayout}
+          />
+          <Route exact path="/" component={LoginLayout} />
+          <Route path="*">
+            <div>NO MATCH</div>
+          </Route>
+        </Switch>
+      </Router>
+    </Provider>
   );
 }
 

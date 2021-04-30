@@ -1,0 +1,12 @@
+@import "./top.css";
+@import "./pages.css";
+
+/* sidebar */
+.panel-main .sidebar {
+  background-color: var(--bg-sidebar);
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  height: 100vh;
+  box-shadow: var(--sidebar-shadow);
+}

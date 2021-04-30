@@ -1,0 +1,25 @@
+.panel-main .sidebar .top {
+  /* background-color: yellow; */
+  position: relative;
+  width: 100%;
+  height: var(--box-sidebar-top-height);
+  text-align: center;
+  padding: var(--sidebar-top-padding);
+}
+
+/* TOP INSIDE */
+.panel-main .sidebar .top .logo {
+  margin: var(--sidebar-top-logo-margin);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.panel-main .sidebar .top .logo .logo-img {
+  margin: var(--sidebar-top-logo-img-margin);
+}
+
+.panel-main .sidebar .top .top-divider {
+  margin: var(--sidebar-top-divider-margin);
+}
+/* TOP INSIDE END() */

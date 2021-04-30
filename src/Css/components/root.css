@@ -1,0 +1,68 @@
+:root {
+  --default-font-size: 14px;
+
+  /* 
+                          BACKGROUND AND TEXT COLORS
+      */
+  /* bg colors */
+  --bg-sidebar: #f4f4f4;
+  --bg-navbar: #ffffff;
+  --bg-main: #e5e5e5;
+  --bg-display: ;
+  --bg-cards: #ffffff;
+  /* text colors */
+  --color: #000000;
+  --color-card-title: #272727;
+  --color-card-detail: #939393;
+  --color-card-icons: #a6a90b;
+
+  /* 
+                          FONT SIZES
+      */
+  /* sidebar */
+  --fSize-logo: ;
+  --fSize-sidebar-title: ;
+  --fSize-sidebar-pages: ;
+  --fSize-sidebar-icons: ;
+  /* navbar */
+  --fSize-navbar-left-icon: ;
+  --fSize-navbar-right-icon: ;
+  --fSize-navbar-title: ;
+  /* cards */
+  --fSize-cards-icon: ;
+  --fSize-cards-title: ;
+  --fSize-cards-detail: ;
+
+  /* 
+                          BOX SIZES
+      */
+
+  /* heights  */
+  --box-sidebar-top-height: 120px;
+  --box-navbar-height: 50px;
+
+  /* widths */
+  --box-sidebar-width: 270px;
+  --box-display-width: 95%;
+  --box-navbar-width: 95%;
+  --box-card-width: ;
+
+  /* paddings */
+  --sidebar-top-padding: 20px 0 50px 0;
+  --sidebar-pages-padding: 50px 20px 10px 20px;
+  --navbar-top-padding: 5px 10px;
+
+  /* margins */
+  --sidebar-top-margin: 0 0 0 0;
+  --sidebar-page-icon-margin: 0 20px 0 0;
+  --sidebar-top-logo-margin: 0 0 10px 0;
+  --sidebar-top-logo-img-margin: 0 20px 0 0;
+  --sidebar-top-divider-margin: 10px 0;
+  --navbar-top-margin: 20px auto;
+
+  /* Borders */
+  --navbar-top-border-radius: 6px;
+
+  /* shadows */
+  --sidebar-shadow: -2px -10px 10px 5px rgba(0, 0, 0, 0.513);
+}
